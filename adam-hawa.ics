@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Walimatulurus Farhan & Asyiqin//EN
+BEGIN:VEVENT
+UID:20250830T030000Z-farhan-asyiqin@yourdomain.com
+DTSTAMP:20250830T020000Z
+DTSTART:20250830T030000Z
+DTEND:20250830T080000Z
+SUMMARY:Walimatulurus Farhan & Asyiqin
+DESCRIPTION:Walimatulurus Farhan & Asyiqin. Lokasi Maps: https://maps.app.goo.gl/8XbsWfx8DgZvot8Y7
+LOCATION:Grand Hall Haji Jamaludin Cheras, Lot355-A, Jalan Merbok Batu 10, 43200 Cheras, Kajang, Batu 10, 43200 Cheras, Selangor
+END:VEVENT
+END:VCALENDAR
