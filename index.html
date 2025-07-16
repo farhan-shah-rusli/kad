@@ -1,0 +1,430 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walimatulurus Adam & Hawa</title>
+
+    <!-- 🎨 CSS Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.css">
+
+    <!-- 🔤 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant&family=Scheherazade+New&family=Caveat&family=Amiri&display=swap" rel="stylesheet">
+
+    <!-- 📦 JS Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body class="no-scroll">
+
+    <div id="gate-container">
+        <div class="door left-door"></div>
+        <div class="door right-door">
+            <div class="gate-seal">
+                <span>Selamat Datang</span>
+            </div>
+        </div>   
+    </div>
+
+    <div class="kad-kawin">
+        <div class="sakura-falling"></div>
+        <div class="konten">
+            <h2>Majlis Perkahwinan</h2>
+            <h3><span class="nama">Farhan<br>&<br>Iqin</span></h3>
+            <h2>30 Ogos 2025 <br>Grand Hall Haji Jamaludin</h2>
+            <br>
+            <h4>"Dan kami ciptakan<br>kamu berpasang-pasangan"<br> - An-Naba' [78:8]</h4>
+        </div>
+    </div>
+
+    <div class="kad-kawin" data-aos="fade-up">
+        <div class="sakura-falling"></div>
+        <div class="konten">
+            <div class="bismillah"></div>
+            <span>Dengan Penuh Kesyukuran</span>
+            <h2><span class="nama">Norzala binti Mohd Shamlan<br><br></span></h2>
+            <br>
+            <span>Menjemput<br>Dato'/Datin/Tuan/Puan/Encik/cik<br>ke majlis perkahwinan anak kami</span>
+            <span class="nama-pengantin">
+                Muhammad Farhan Shah bin Ahmad Rusli<br>&<br>Nur Asyiqin binti Mohd Daresani
+            </span>
+        </div>
+    </div>
+
+    <div class="kad-kawin" data-aos="fade-up">
+        <div class="sakura-falling"></div>
+        <div class="konten">
+            <span class="ikon"><i class="fas fa-calendar-alt"></i></span>
+            <span>
+                Sabtu, 30 Ogos 2025
+            </span>
+            <div class="countdown" id="countdown">
+                <div><span id="days">0</span><div class="label">Hari</div></div>
+                <div>:</div>
+                <div><span id="hours">0</span><div class="label">Jam</div></div>
+                <div>:</div>
+                <div><span id="minutes">0</span><div class="label">Minit</div></div>
+                <div>:</div>
+                <div><span id="seconds">0</span><div class="label">Saat</div></div>
+            </div>
+            <br>
+            <span class="ikon"><i class="fas fa-clock"></i></span>
+            <span>
+                11:00 Pagi - 4:00 Petang
+            </span>
+            <br>
+            <br>
+            <span class="ikon"><i class="fas fa-map-marker-alt"></i></span>
+            <span>
+                Grand Hall Haji Jamaludin,<br>Lot355-A,jalan merbok<br>Batu 10,<br>43200 cheras,<br>Selangor
+            </span>
+        </div>
+    </div>
+
+    <div class="kad-kawin" data-aos="fade-up">
+        <div class="sakura-falling"></div>
+        <div class="konten">
+            <h2>Aturcara Majlis</h2>
+            <div class="line"></div>
+            <div class="aturcara">
+                <div class="bulat"></div>
+                <span class="nama"><b>11.00 Pagi</b></span>
+                <span>Majlis Bermula</span>
+            </div>
+            <div class="aturcara">
+                <div class="bulat"></div>
+                <span class="nama"><b>12.00 Tengah Hari</b></span>
+                <span>Ketibaan Pengantin</span>
+            </div>
+            <div class="aturcara">
+                <div class="bulat"></div>
+                <span class="nama"><b>4.00 Petang</b></span>
+                <span>Majlis Bersurai</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="kad-kawin" data-aos="fade-up">
+        <div class="sakura-falling"></div>
+        <div class="konten">
+            <h2>Buku Tetamu</h2>
+            <div class="kad-ucapan" id="kad-ucapan">
+            </div>
+            <button type="button" class="btn-ucapan" data-bs-toggle="offcanvas" data-bs-target="#ucapan"><i class="fas fa-commenting"></i>&nbsp Berikan Ucapan</button>
+        </div>
+    </div>
+
+    <div class="kad-kawin" data-aos="fade-up">
+        <div class="sakura-falling"></div>
+        <div class="konten doa">
+            <div class="kerawang"></div><br>
+            <div class="bismillah"></div>
+            <p>“ Dari setinggi dan seluas kasih sayangMu, Kau limpahkan rahmat jua keampunanMu kepada pengantin suami isteri. Berkatilah majlis yang diadakan dengan keberkatan dari permulaan hingga pengakhirnya. Sesungguhnya pertemuan ini adalah dengan izinMu, kurniakanlah keduanya ketenangan, kebahagiaan dan jiwa yang tabah menghadapi setiap dugaanMu. Mudah-mudahan perkongsian hidup yang dibina berkekalan hingga ke akhir usia dan kurniakanlah kepada mereka zuriat yang soleh dan solehah. Dengan taufik dan hidayahMu beruntunglah keduanya dalam kehidupan di dunia lebih-lebih lagi di akhirat ”</p>
+            <div class="kerawang terbalik"></div>
+        </div>
+    </div>
+
+    <div class="space"></div>
+
+    <section class="navigasi">
+        <div class="d-flex">  
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#rsvp"><span class="ikon" style="color: burlywood;"><i class="fas fa-envelope"></i></span>RSVP</a>
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#kalendar"><span class="ikon" style="color: floralwhite;"><i class="fas fa-calendar-plus"></i></span>Kalendar</a>
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#hubungi"><span class="ikon" style="color: chartreuse;"><i class="fas fa-phone"></i></span>Hubungi</a>
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#lokasi"><span class="ikon" style="color: tomato;"><i class="fas fa-location-arrow"></i></span>Lokasi</a>
+            <button id="audio-control" class="btn btn-sm btn-outline"><span class="ikon seal-bouncing" style="color: white;"><i class="fas fas fa-volume-up"></i></span></button>
+        </div>
+    </section>
+
+    <audio id="audio" loop hidden>
+        <source src="assets/audio/selamat-pengantin-baru-Wann.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- offcanvas -->
+    <!-- rsvp -->
+    <div class="offcanvas offcanvas-bottom custom-offcanvas" tabindex="-1" id="rsvp">
+        <div class="offcanvas-header custom-offcanvas-header justify-content-center">
+            <h5 class="offcanvas-title text-center w-100 fw-bold">RSVP</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex justify-content-center align-items-center">
+            <form id="rsvp-submission" class="w-100">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="nama-addon">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Nama" id="nama" name="nama" required>
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="telefon-addon">
+                        <i class="fas fa-phone"></i>
+                    </span>
+                    <input
+                        id="telefon"
+                        name="telefon"
+                        type="tel"
+                        inputmode="numeric"
+                        pattern="[0-9]{10,12}"
+                        placeholder="0123456789"
+                        title="Sila masukkan nombor sahaja, 10–12 digit"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                        class="form-control"
+                        required
+                    >
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="email-addon">
+                        <i class="fas fa-at"></i>
+                    </span>
+                    <input type="email" class="form-control" placeholder="Email" name="email" required>
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="jumlah-addon">
+                        <i class="fas fa-user-plus"></i>
+                    </span>
+                    <input type="number" class="form-control" placeholder="Jumlah yang hadir" name="jumlah" min="1" required>
+                </div>
+
+                <input type="hidden" name="jenis" value="rsvp">
+                <button type="submit" class="btn btn-primary w-100" id="submit-btn">
+                    <span id="btn-text"><i class="fas fa-paper-plane me-2"></i> Hantar</span>
+                    <span id="btn-spinner" style="display:none;">
+                        <i class="fas fa-spinner fa-spin me-2"></i> Sedang Hantar...
+                    </span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- kalendar -->
+    <div class="offcanvas offcanvas-bottom custom-offcanvas" tabindex="-1" id="kalendar">
+        <div class="offcanvas-header custom-offcanvas-header justify-content-center">
+            <h5 class="offcanvas-title text-center w-100 fw-bold">Kalendar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
+            <div class="kandungan ">
+                <div class="kandungan-kad d-flex align-items-center justify-content-between">
+                    <div class="kandungan-info">
+                        <span class="contact-name fw-bold d-block">Tambah pada Google Calendar</span>
+                    </div>
+                    <div class="kandungan-action d-flex gap-2">
+                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Walimatulurus+Adam+%26+Hawa&dates=20260227T030000Z/20260227T080000Z&details=Walimatulurus+Adam+%26+Hawa&location=First+Avenue,+Bandar+Utama+City+Centre,+47800+Petaling+Jaya,+Selangor" target="_blank" class="btn btn-primary" title="WhatsApp">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="kandungan-kad d-flex align-items-center justify-content-between">
+                    <div class="kandungan-info">
+                        <span class="contact-name fw-bold d-block">Tambah Pada Apple Calendar</span>
+                    </div>
+                    <div class="kandungan-action d-flex gap-2">
+                        <a href="assets/events/adam-hawa.ics" download target="_blank" class="btn btn-dark" title="WhatsApp">
+                            <i class="fa-brands fa-apple"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hubungi -->
+    <div class="offcanvas offcanvas-bottom custom-offcanvas" tabindex="-1" id="hubungi">
+        <div class="offcanvas-header custom-offcanvas-header justify-content-center">
+            <h5 class="offcanvas-title text-center w-100 fw-bold">Hubungi</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
+            <div class="kandungan ">
+                <div class="kandungan-kad d-flex align-items-center justify-content-between">
+                    <div class="kandungan-info">
+                        <span class="contact-name fw-bold d-block">Zala (Ibu)</span>
+                        <span class="contact-number text-muted">016-659 4800</span>
+                    </div>
+                    <div class="kandungan-action d-flex gap-2">
+                        <a href="https://wa.me/60132412730" target="_blank" class="btn btn-success" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:0132412730" class="btn btn-primary" title="Call">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="kandungan-kad d-flex align-items-center justify-content-between">
+                    <div class="kandungan-info">
+                        <span class="contact-name fw-bold d-block">Farah (Kakak)</span>
+                        <span class="contact-number text-muted">016-347 8672</span>
+                    </div>
+                    <div class="kandungan-action d-flex gap-2">
+                        <a href="https://wa.me/60132412730" target="_blank" class="btn btn-success" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:0132412730" class="btn btn-primary" title="Call">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- lokasi -->
+     <div class="offcanvas offcanvas-bottom custom-offcanvas" tabindex="-1" id="lokasi">
+        <div class="offcanvas-header custom-offcanvas-header justify-content-center">
+            <h5 class="offcanvas-title text-center w-100 fw-bold">Lokasi</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
+            <div class="kandungan ">
+                <div class="kandungan-kad d-flex align-items-center justify-content-between">
+                    <div class="kandungan-info">
+                        <span class="contact-name fw-bold d-block">Buka Waze</span>
+                    </div>
+                    <div class="kandungan-action d-flex gap-2">
+                        <a href="https://ul.waze.com/ul?venue_id=66584607.665977147.339300&overview=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank" class="btn btn-dark" title="WhatsApp">
+                            <i class="fa-brands fa-waze"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="kandungan-kad d-flex align-items-center justify-content-between">
+                    <div class="kandungan-info">
+                        <span class="contact-name fw-bold d-block">Buka Google Map</span>
+                    </div>
+                    <div class="kandungan-action d-flex gap-2">
+                        <a href="https://www.google.com/maps?q=Grand+Hall+Haji+Jamaludin+Cheras" target="_blank" class="btn btn-success" title="WhatsApp">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ucapan -->
+     <div class="offcanvas offcanvas-bottom custom-offcanvas" tabindex="-1" id="ucapan">
+        <div class="offcanvas-header custom-offcanvas-header justify-content-center">
+            <h5 class="offcanvas-title text-center w-100 fw-bold">Ucapan</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex justify-content-center align-items-center">
+            <form id="ucapan-submission" class="w-100">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="nama-addon">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Nama" id="nama" name="nama" required>
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="ucapan-addon">
+                        <i class="fas fa-commenting"></i>
+                    </span>
+                    <textarea class="form-control" placeholder="Ucapan" id="ucapan" name="ucapan" rows="4" required></textarea>
+                </div>
+
+                <input type="hidden" name="jenis" value="ucapan">
+                <button type="submit" class="btn btn-primary w-100" id="submit-btn-ucapan">
+                    <span id="btn-text-ucapan"><i class="fas fa-paper-plane me-2"></i> Hantar</span>
+                    <span id="btn-spinner-ucapan" style="display:none;">
+                        <i class="fas fa-spinner fa-spin me-2"></i> Sedang Hantar...
+                    </span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"></script>
+    <script>
+        document.querySelectorAll('.sakura-falling').forEach((el, i) => {
+            const uniqueClass = 'sakura-' + i;
+            el.classList.add(uniqueClass);
+            new Sakura('.' + uniqueClass);
+        });
+
+        const weddingDate = new Date("2025-08-30T10:00:00").getTime(); // Ubah tarikh di sini
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // run immediately
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+        });
+    </script>
+
+    <script src="assets/rsvp-submission.js"></script>
+
+    <script>
+        window.addEventListener('click', () => {
+            const leftDoor = document.querySelector('.left-door');
+            const rightDoor = document.querySelector('.right-door');
+            const gateContainer = document.getElementById('gate-container');
+            const seal = document.querySelector('.gate-seal');
+
+            leftDoor.classList.add('open-left');
+            rightDoor.classList.add('open-right');
+            // seal.classList.add('open-right');
+
+            // Selepas pintu terbuka
+            setTimeout(() => {
+            gateContainer.style.pointerEvents = 'none';
+            gateContainer.style.zIndex = '-1';
+            document.body.classList.remove('no-scroll'); // benarkan scroll
+            }, 2000);
+
+
+            audio.play().catch((e) => {
+                console.log("Autoplay blocked, user must interact first");
+            });
+        }, { once: true });
+
+        const audio = document.getElementById('audio');
+        const btn = document.getElementById('audio-control');
+        const icon = btn.querySelector('i');
+        const ikonWrapper = btn.querySelector('.ikon');
+
+        btn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                icon.classList.remove('fa-volume-mute');
+                icon.classList.add('fa-volume-up');
+                ikonWrapper.classList.add('seal-bouncing');
+            } else {
+                audio.pause();
+                icon.classList.remove('fa-volume-up');
+                icon.classList.add('fa-volume-mute');
+                ikonWrapper.classList.remove('seal-bouncing');
+            }
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Walimatulurus Adam & Hawa//EN
+BEGIN:VEVENT
+UID:20260227T090000Z-adam-hawa@yourdomain.com
+DTSTAMP:20260227T020000Z
+DTSTART:20260227T030000Z
+DTEND:20260227T080000Z
+SUMMARY:Walimatulurus Adam & Hawa
+DESCRIPTION:Walimatulurus Adam & Hawa
+LOCATION:First Avenue, Bandar Utama City Centre, 47800 Petaling Jaya, Selangor
+END:VEVENT
+END:VCALENDAR
