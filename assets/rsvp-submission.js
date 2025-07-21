@@ -1,4 +1,5 @@
-const link = 'https://script.google.com/macros/s/AKfycbzxNzpuUhIqFouW7DORlbshX_rQj6nF-NIZGsQacdoc1GJ14Y9ZDjCH_1B0geyjmwqm/exec';
+//const link = 'https://script.google.com/macros/s/AKfycbxRLSeGdwmuS61PaR_W_5_2NxhePOxPRXMOcfb2A9Dl-djeKrs1CPQUYCy0VOmA1JHtjg/exec';
+const link = 'https://script.google.com/macros/s/AKfycbxkT4LZxI_Q0Ew6Y1yvVg0Sk1yZEhREceL-MBFylGQtgp3eT3OsuekkM2A8lDec1egfMA/exec';
 
 document.getElementById("rsvp-submission").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -117,8 +118,8 @@ function fetchUcapanData() {
       if (container) {
         container.innerHTML = data.map(row => `
         <div class="ucapan">
-            <b>${row.Nama}</b>
-            <p>${row.Ucapan}</p>
+            <b>${row.nama}</b>
+            <p>${row.ucapan}</p>
             <div class="divider"></div>
         </div>
         `).join("");
