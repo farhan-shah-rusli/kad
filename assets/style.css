@@ -389,7 +389,7 @@ form {
     transition: transform 2s ease-in-out;
 }
 
-.left-door {
+/* .left-door {
     left: 0;
     border-right: 2px solid white;
 }
@@ -401,10 +401,30 @@ form {
 
 .left-door, .right-door {
     background: url('img/flora-bg.png');
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     height: 100vh;
+} */
+
+.left-door {
+    left: 0;
+    border-right: 2px solid white;
+    background: linear-gradient(to right, #d1c4e9, #805fb6);
 }
+
+.right-door {
+    right: 0;
+    border-left: 2px solid white;
+    background: linear-gradient(to left, #d1c4e9, #805fb6);
+}
+
+/* .left-door, .right-door {
+    background: url('img/flora-bg.png');
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+} */
 
 .open-left {
     transform: translateX(-200%);
